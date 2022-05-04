@@ -9,7 +9,6 @@ def todo_list(request):
 
 def completed_todo_list(request, todo_id):
     todo = [Todo.objects.get(id = todo_id)]
-    print(todo)
     tasks = Task.objects.filter(todo = todo[0], is_done = True)
     return render(request, 'task_list.html', {
         'todos': todo,
