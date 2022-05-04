@@ -1,0 +1,22 @@
+{% extends "todo_list.html" %}
+{% block tasks %}
+    {% if show_completed %}
+        {% for task in tasks %}
+            <div class="table-column-first">{{ task.name }}</div>
+            <div class="table-column">{{ task.created_date }}</div>
+            <div class="table-column">{{ task.deadline }}</div>
+            <div class="table-column">{{ task.owner }}</div>
+            <div class="table-column">{{ task.mark }}</div>
+        {% endfor %}
+    {% else %}
+        {% for task in todo.task_set.all %}
+            <div class="table-column-first">{{ task.name }}</div>
+            <div class="table-column">{{ task.created_date }}</div>
+            <div class="table-column">{{ task.deadline }}</div>
+            <div class="table-column">{{ task.owner }}</div>
+            <div class="table-column">{{ task.mark }}</div>
+        {% endfor %}
+    {% endif %}
+    
+
+{% endblock %}

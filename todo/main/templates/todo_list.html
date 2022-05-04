@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block todos %}
+    {% for todo in todos %}
+        <div class="todo">
+            <div class="todo-text">Tasks in "{{todo.name}}"</div>
+            <div class="table-header-column-first">Task</div>
+            <div class="table-header-column">Created</div>
+            <div class="table-header-column">Due on</div>
+            <div class="table-header-column">Owner</div>
+            <div class="table-header-column">Mark</div>
+        </div>
+        {% block tasks %}{% endblock %}
+        <button class="btn btn-warning" id="add" onclick="location='http://localhost:8000/todos/{{todo.id}}/completed'">show completed</button>
+    {% endfor %}
+{% endblock %}

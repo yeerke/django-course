@@ -1,0 +1,57 @@
+#header {
+    background-color: rgb(52, 50, 50);
+    width: 100%;
+    height: 70px;
+}
+
+#header-text {
+    color: white;
+    font-size: 40px;
+    margin-top: 14px;
+    margin-left: 14px;
+    position: absolute;
+}
+
+.table-header-column {
+    float: left;
+    margin-left: 12%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table-header-column-first {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.table-column-first {
+    clear:both;
+    float: left;
+    margin-left: 12%;
+    font-size: 20px;
+}
+
+.table-column {
+    float: left;
+    margin-left: 12%;
+    font-size: 20px;
+}
+
+.todo {
+    clear: both;
+    margin-left: 11.78%;
+}
+
+.todo-text {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+}
+
+#add {
+    margin-top: 30px;
+    margin-left: 11.78%;
+}
